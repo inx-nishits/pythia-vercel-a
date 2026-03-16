@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Target, Cpu, Wifi, Sparkles, Layout, ChevronRight } from "lucide-react";
+import { Trophy, Target, Cpu, Sparkles, Layout } from "lucide-react";
 import { Sections } from "@/app/sections";
 
 const features = [
@@ -65,14 +65,16 @@ const features = [
     icon: <Target className="w-5 h-5" />,
     className: "lg:col-span-1 lg:row-span-1",
     visual: (
-      <div className="mt-6 p-3.5 bg-emerald-50/50 rounded-xl border border-emerald-100/60">
+          <div className="mt-6 p-3.5 bg-emerald-50/50 rounded-xl border border-emerald-100/60">
         <div className="flex gap-2.5 items-start">
           <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shadow-sm shrink-0">
             <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
           </div>
           <div className="flex-1 space-y-0.5">
             <p className="text-[11px] font-black text-slate-900 leading-tight">Coaching Suggestion</p>
-            <p className="text-[10px] text-emerald-800 font-medium leading-normal">"Mention the loyalty program with fuel purchases."</p>
+            <p className="text-[10px] text-emerald-800 font-medium leading-normal">
+              &quot;Mention the loyalty program with fuel purchases.&quot;
+            </p>
           </div>
         </div>
       </div>

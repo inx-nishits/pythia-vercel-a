@@ -102,7 +102,7 @@ export default function RetailSection() {
                     backgroundClip: "text",
                   }}
                 >
-                  You just can't hear it.
+                  You just can&apos;t hear it.
                 </span>
               </h2>
             </motion.div>
@@ -115,7 +115,7 @@ export default function RetailSection() {
               className="text-sm leading-relaxed font-medium max-w-lg"
               style={{ color: "#cbd5e1" }}
             >
-              Management can't be everywhere. A frustrated customer walks out.
+              Management can&apos;t be everywhere. A frustrated customer walks out.
               A staff member burns out. These moments are invisible to traditional
               retail dashboards — until they hit the P&amp;L.
             </motion.p>
