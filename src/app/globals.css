@@ -1,0 +1,144 @@
+/* Utility to hide scrollbars while allowing scroll */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #020617; /* Slate 950 */
+  
+  --brand-navy: #0f172a; /* Slate 900 */
+  --brand-navy-light: #1e293b; /* Slate 800 */
+  
+  --brand-teal: #10b981; /* Emerald 500 */
+  --brand-teal-hover: #059669; /* Emerald 600 */
+
+  --brand-accent: #6366f1; /* Indigo 500 */
+  --brand-coral: #f43f5e; /* Rose 500 */
+  
+  --brand-gray-light: #f8fafc;
+  --brand-gray-border: #e2e8f0;
+
+  /* Design system: cards & sections */
+  --radius-card: 24px;
+  --radius-card-lg: 32px;
+  --radius-pill: 9999px;
+  --shadow-premium: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px rgba(0, 0, 0, 0.1);
+  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --section-padding-y: 100px;
+  --section-padding-y-lg: 160px;
+  
+  /* Industry-standard wide container (B2B SaaS / marketing); 1400px is common */
+  --content-max-width: 1320px;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-light: var(--brand-navy-light);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-hover: var(--brand-teal-hover);
+  --color-brand-coral: var(--brand-coral);
+  --font-sans: var(--font-roboto-sans), sans-serif;
+  --font-heading: var(--font-instrument-sans), sans-serif;
+  
+  --breakpoint-mobile: 320px;
+  --breakpoint-desktop: 768px;
+  --breakpoint-wide: 920px;
+  --max-width-content: 1320px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-width: 0;
+  width: 100%;
+}
+
+/* Base styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+/* Custom Utilities */
+.glass-header {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.premium-card {
+  background: white;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-premium);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Focus states */
+:focus-visible {
+  outline: 2px solid var(--brand-teal);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--brand-teal);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  :root {
+    --section-padding-y: 60px;
+  }
+}
