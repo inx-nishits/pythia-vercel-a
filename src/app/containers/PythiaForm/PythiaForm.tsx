@@ -180,10 +180,7 @@ function PythiaForm({
       </motion.div>
     );
   }
-
-  const stepsCount = 3;
-  const progress = ((step + 1) / stepsCount) * 100;
-
+ 
   return (
     <div className="w-full">
       {/* Step Indicator */}

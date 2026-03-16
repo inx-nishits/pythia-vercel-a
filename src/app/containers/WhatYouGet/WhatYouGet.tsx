@@ -47,9 +47,13 @@ const features = [
         </div>
         <div className="space-y-1">
           <p className="text-emerald-400">{"{"}</p>
-          <p className="pl-3 text-slate-300">"issue": <span className="text-amber-400">"Cooler leak"</span>,</p>
-          <p className="pl-3 text-slate-300">"confidence": 0.98,</p>
-          <p className="pl-3 text-slate-300">"status": <span className="text-emerald-400">"Auto-filled"</span></p>
+          <p className="pl-3 text-slate-300">
+            &quot;issue&quot;: <span className="text-amber-400">&quot;Cooler leak&quot;</span>,
+          </p>
+          <p className="pl-3 text-slate-300">&quot;confidence&quot;: 0.98,</p>
+          <p className="pl-3 text-slate-300">
+            &quot;status&quot;: <span className="text-emerald-400">&quot;Auto-filled&quot;</span>
+          </p>
           <p className="text-emerald-400">{"}"}</p>
         </div>
       </div>

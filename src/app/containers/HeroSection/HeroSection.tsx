@@ -415,7 +415,7 @@ export default function HeroSection() {
                   </span>
                 </div>
                 <p className="text-[12px] font-semibold text-slate-800 leading-snug">
-                  "Missed upsell on premium add-on — 3rd time this shift."
+                  &quot;Missed upsell on premium add-on — 3rd time this shift.&quot;
                 </p>
                 <div className="mt-2.5 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
                   <div className="h-full w-[72%] bg-emerald-400 rounded-full" />

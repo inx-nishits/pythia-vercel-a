@@ -1,10 +1,9 @@
 import React from "react";
 
-function Button({ 
-  className = "", 
-  variant = "primary", 
-  ...props 
-}: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "primary" | "secondary" | "ghost" }) {
+function Button({
+  className = "",
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   
   const baseStyles = "inline-flex items-center justify-center transition-all duration-300 font-bold disabled:opacity-50 disabled:cursor-not-allowed";
   

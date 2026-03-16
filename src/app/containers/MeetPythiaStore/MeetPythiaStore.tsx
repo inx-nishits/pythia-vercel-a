@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Headphones, Brain, Wifi, ShieldCheck, Cpu, Zap } from "lucide-react";
+import { Brain, Wifi, ShieldCheck, Cpu, Zap } from "lucide-react";
 import { Sections } from "@/app/sections";
 import Image from "next/image";
 

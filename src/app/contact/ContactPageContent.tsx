@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, MessageSquare, Send, ShieldCheck } from "lucide-react";
+import { Mail, MapPin, Send, ShieldCheck } from "lucide-react";
 import PythiaForm from "../containers/PythiaForm";
 
 const contactInfo = [

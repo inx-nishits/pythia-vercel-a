@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Sections } from "@/app/sections";
-import { Zap, Brain, Rocket, ArrowRight } from "lucide-react";
+import { Zap, Brain, Rocket } from "lucide-react";
 
 const steps = [
   {

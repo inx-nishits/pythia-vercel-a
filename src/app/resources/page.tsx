@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "../containers/Header";
 import Footer from "../containers/Footer";
-import { Search, Filter, BookOpen, ArrowRight } from "lucide-react";
+import { Search, BookOpen, ArrowRight } from "lucide-react";
 
 type ResourceCategory = "Blog" | "Article" | "Case Study";
 

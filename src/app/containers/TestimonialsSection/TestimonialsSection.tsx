@@ -92,7 +92,7 @@ function TestimonialsSection() {
                   ))}
                 </div>
                 <blockquote className="text-[15px] text-slate-700 font-medium leading-relaxed italic">
-                  "{t.quote}"
+                  &quot;{t.quote}&quot;
                 </blockquote>
               </div>
               

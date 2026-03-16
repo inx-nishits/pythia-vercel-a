@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Button from "@/app/component/Button";
 import { motion } from "framer-motion";
-import { Check, ArrowRight, Play, MessageSquare } from "lucide-react";
+import { Check, Play, MessageSquare } from "lucide-react";
 
 interface SolutionLayoutProps {
   title: string;

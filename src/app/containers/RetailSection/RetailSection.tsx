@@ -8,7 +8,7 @@ const painPoints = [
   {
     icon: <UserMinus className="w-5 h-5" />,
     title: "Silent Turnover",
-    desc: "Your best cashier just quit, and you didn't even know they were unhappy.",
+    desc: "Your best cashier just quit, and you didn&apos;t even know they were unhappy.",
     stat: "42% Industry average",
     pill: "bg-rose-500/20 border-rose-500/30 text-rose-300",
     iconBg: "bg-rose-500/15",
